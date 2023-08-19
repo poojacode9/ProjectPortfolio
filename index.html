@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        *{ 
+            margin: 0;
+            padding: 0;
+         }
+        body{
+            background-color: rgb(133, 178, 245);
+            color:white;
+            font-family:'Poppins', sans-serif;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 70px;;
+            background-color: black;
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li{
+            list-style: none;
+            margin: 0 23px;
+        }
+        nav ul li a{
+           text-decoration: none;
+           color: white;
+
+
+        }
+        nav ul li a:hover{
+            color: blueviolet;
+            font-size: 1.03rem;
+        }
+        .left{
+            font-size:1.5rem;
+        }
+        .firstSection{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: black;
+            margin:80px;
+            margin:50px
+        }
+        .firstSection > div{
+            width: 40%;
+        }
+        .leftSection{
+    
+            font-size: 3rem;
+
+            
+        }
+        .rightSection img{
+            width:80%;
+            margin:50px;
+            
+        }
+        .purple{
+            color:rgb(111, 55, 105)
+        }
+        #element{
+            color:rgb(111, 55, 105)
+        }
+        footer{
+            background-color: rgb(32, 34, 35);
+            height: 233px;
+        }
+        .footer{
+            display:flex;
+            padding: 23px 122px;
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Pooja's Portfolio</div>
+            <div class="right">
+            <ul>
+              <li><a href="/"> Home</a> </li>
+               <li><a href="/"> About</a> </li>
+              <li><a href="/"> Services</a> </li>
+               <li><a href="/"> Past Projects</a></li> 
+             <li><a href="/"> Contact Me</a> </li>
+            </ul>
+        </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">Hi, my name is <span class="purple">Pooja</span>
+                <div>I am an engineering student. </div>
+                <span id="element"></span>
+            </div>
+            <div class="rightSection"><img src="devimg.png" alt=""></div>
+        </section>
+          </main>
+          <footer>
+            <div class="footer">
+                <div class="footer-First">
+                    <h1>Pooja Chavan</h1>
+                </div>
+                <div class="footer-Second"></div>
+                <div class="footer-Third"></div>
+                <div class="footer-Fourth"></div>
+            </div>
+          </footer>
+    
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Skills','Javascritp','HTML','CSS'],
+          typeSpeed: 50,
+        });
+      </script>
+    
+</body>
+</html>
